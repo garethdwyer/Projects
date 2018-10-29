@@ -1,0 +1,10 @@
+Hi Codecademy,
+
+I couldnt upload the entire folder, including all Node and React dependencies
+so I just uploaded my src and public folder. I presume you will install a ReactApp and simply
+replace the src and public folder with my files?!
+
+Hope thats cool
+
+Cheers,
+Joe
