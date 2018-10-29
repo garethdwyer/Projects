@@ -1,0 +1,25 @@
+Feature Request: Enable Enter to search
+October 25th 2018
+ 
+OBJECTIVE
+To give the user the ability to press enter from the keyboard to enable search, instead of using a click event on the button.
+BACKGROUND
+Currently the user has to use the mouse to send results to the server, we want to add some ease to function.
+This feature accomplishes the following:
+?     Enables a user to send a search from the keyboard
+?     Should not interfere with the click event attached to the search request button
+TECHNICAL DESIGN
+Attaching a key code the the event.
+<script>
+      	document.getElementById(‘name’).addEventListener(‘keypress’, function(event) {
+                	if (event.keyCode == 13) {
+                          	event.preventDefault();
+                	}
+      	}_;
+</script>
+ 
+ 
+CAVEATS
+Final Note
+When filling out a form, pressing enter in a textbox should submit the form. This is known as an implicit form submission. Despite being vital for assistive technologies and an important user convenience, many web forms prevent it for one reason or another. If you write web forms, please take a minute to ensure that the enter key can indeed be used to submit them; it’ll help make the web a better place for everyone.
+ 
